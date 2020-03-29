@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="fr">
 
 <head>
 
@@ -15,7 +14,8 @@
 
   <!-- Custom Fonts -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+    rel="stylesheet" type="text/css">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
   <!-- Custom CSS -->
@@ -24,6 +24,18 @@
 </head>
 
 <body id="page-top">
+  <!-- Sketchy multi language setup -->
+  <form>
+    <select id="lang-switch">
+      <option value="en">English</option>
+      <option value="fr" selected>Français</option>
+    </select>
+  </form>
+
+  <p>
+    <span lang="fr">Je suis en train de souper!</span>
+    <span lang="en">I'm eating my supper!</span>
+  </p>
 
   <!-- Navigation -->
   <a class="menu-toggle rounded" href="#">
@@ -70,7 +82,8 @@
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-          <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
+          <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our
+            friends at
             <a href="https://unsplash.com/">Unsplash</a>!</p>
           <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
         </div>
@@ -134,7 +147,8 @@
       <h2 class="mx-auto mb-5">Welcome to
         <em>your</em>
         next website!</h2>
-      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
+      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download
+        Now!</a>
     </div>
   </section>
 
@@ -218,7 +232,8 @@
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://www.youtube.com/channel/UCmy-xW865C4_kcxSLvCuT-Q">
+          <a class="social-link rounded-circle text-white mr-3"
+            href="https://www.youtube.com/channel/UCmy-xW865C4_kcxSLvCuT-Q">
             <i class="icon-social-youtube"></i>
           </a>
         </li>
@@ -250,8 +265,30 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
+  <script src="js/stylish-portfolio.js"></script>
 
+  <!-- Sketchy multiples languages support -->
+  <script>
+    // Solution from https://stackoverflow.com/questions/53021813/html-two-language-option-with-button-without-having-to-redirect-to-different-pa
+    $('[lang]').hide(); // hide all lang attributes on start.
+    $('[lang="fr"]').show(); // select defaut language
+    $('#lang-switch').change(function () { // put onchange event when user select a language
+      var lang = $(this).val(); // decide which language to display using switch case
+      switch (lang) {
+        case 'fr':
+          $('[lang]').hide();
+          $('[lang="fr"]').show();
+          break;
+        case 'en':
+          $('[lang]').hide();
+          $('[lang="en"]').show();
+          break;
+        default:
+          $('[lang]').hide();
+          $('[lang="fr"]').show();
+      }
+    });
+  </script>
 </body>
 
 </html>
