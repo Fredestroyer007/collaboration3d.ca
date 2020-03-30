@@ -104,12 +104,14 @@
             </li>
 
             <li class="nav-item">
-              <select id="lang-switch" class="nav-link form-control no-border shadow-none text-uppercase">
-                <option value="fr" selected>Français</option>
-                <option value="en">English</option>
-              </select>
-              </form>
-
+              <div class="dropdown">
+                <button class="btn dropbtn customBtn" lang="fr"><img src="img/france.png"></button>
+                <button class="btn dropbtn customBtn" lang="en"><img src="img/uk.png"></button>
+                <div class="dropdown-content">
+                  <a onclick="toggleLanguage('Français')" value="fr"><img src="img/france.png"></a>
+                  <a onclick="toggleLanguage('English')" value="en"><img src="img/uk.png"></a>
+                </div>
+              </div>
             </li>
 
 
@@ -158,7 +160,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6"><img src="img/emojiMask.jpg" alt="..." class="img-fluid"></div>
+        <div class="col-lg-6"><img src="img/emojiMask.jpg" alt="" class="img-fluid  image-rounded"></div>
       </div>
       <div class="row">
         <div class="col-lg-6">
@@ -236,7 +238,7 @@
 
       <!--Slides-->
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" data-interval="2000">
+        <div class="carousel-item active" data-interval="3500">
           <div class="view">
             <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(105).jpg"
               alt="First slide">
@@ -252,7 +254,7 @@
 
           </div>
         </div>
-        <div class="carousel-item" data-interval="2000">
+        <div class="carousel-item" data-interval="3500">
 
           <!--Mask color-->
           <div class="view">
@@ -270,7 +272,7 @@
 
           </div>
         </div>
-        <div class="carousel-item" data-interval="2000">
+        <div class="carousel-item" data-interval="3500">
 
           <!--Mask color-->
           <div class="view">
@@ -409,7 +411,8 @@
               <div class="form-group col-lg-12">
 
                 <label for="courriel">Votre courriel</label>
-                <input type="email" name="courriel" placeholder="Entrez votre courriel" class="form-control form-rounded">
+                <input type="email" name="courriel" placeholder="Entrez votre courriel"
+                  class="form-control form-rounded">
 
               </div>
 
@@ -417,7 +420,8 @@
                 <i class="fas fa-pencil prefix grey-text"></i>
 
                 <label for="message">Votre message pour nous</label>
-                <textarea type="text" name="message" placeholder="Entrez votre message" rows="4" class="form-control form-rounded"></textarea>
+                <textarea type="text" name="message" placeholder="Entrez votre message" rows="4"
+                  class="form-control form-rounded"></textarea>
                 <input type="text" name="_gotcha" style="display:none" />
 
               </div>
@@ -438,7 +442,8 @@
               <div class="form-group col-lg-6">
 
                 <label for="firstname">Your firstname</label>
-                <input type="text" name="firstname" placeholder="Enter your first name" class="form-control form-rounded">
+                <input type="text" name="firstname" placeholder="Enter your first name"
+                  class="form-control form-rounded">
 
               </div>
 
@@ -460,7 +465,8 @@
                 <i class="fas fa-pencil prefix grey-text"></i>
 
                 <label for="message">Your message for us</label>
-                <textarea type="text" name="text" placeholder="Enter your message" rows="4" class="form-control form-rounded"></textarea>
+                <textarea type="text" name="text" placeholder="Enter your message" rows="4"
+                  class="form-control form-rounded"></textarea>
                 <input type="text" name="_gotcha" style="display:none" />
 
               </div>
@@ -536,25 +542,20 @@
 
 <!-- Sketchy multiples languages support -->
 <script>
-  // Solution from https://stackoverflow.com/questions/53021813/html-two-language-option-with-button-without-having-to-redirect-to-different-pa
   $('[lang]').hide(); // hide all lang attributes on start.
   $('[lang="fr"]').show(); // select defaut language
-  $('#lang-switch').change(function () { // put onchange event when user select a language
-    var lang = $(this).val(); // decide which language to display using switch case
-    switch (lang) {
-      case 'fr':
-        $('[lang]').hide();
-        $('[lang="fr"]').show();
-        break;
-      case 'en':
-        $('[lang]').hide();
-        $('[lang="en"]').show();
-        break;
-      default:
-        $('[lang]').hide();
-        $('[lang="fr"]').show();
+
+  function toggleLanguage(language) {
+    let description = document.getElementById("description");
+    if (language === "Français") {
+      $('[lang]').hide();
+      $('[lang="fr"]').show();
     }
-  });
+    else {
+      $('[lang]').hide();
+      $('[lang="en"]').show();
+    }
+  }
 </script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
