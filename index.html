@@ -217,14 +217,168 @@
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="content-section bg-primary text-white">
+  <!-- Contact -->
+  <section class="content-section" id="contact">
     <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+      <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm"
+        lang="fr">Contactez-nous!</a>
+      <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm"
+        lang="en">Contact us!</a>
     </div>
   </section>
+
+  <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input type="text" id="form34" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="form34">Your name</label>
+          </div>
+
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="form29" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="form29">Your email</label>
+          </div>
+
+          <div class="md-form mb-5">
+            <i class="fas fa-tag prefix grey-text"></i>
+            <input type="text" id="form32" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="form32">Subject</label>
+          </div>
+
+          <div class="md-form">
+            <i class="fas fa-pencil prefix grey-text"></i>
+            <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+            <label data-error="wrong" data-success="right" for="form8">Your message</label>
+          </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <input type="submit" value="I'm attending" name="submit" class="btn btn-unique">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form id="contact-form" method="post" action="contact.php" name="contact-form" role="form">
+    <div class="form-group">
+       <i class="fa fa-user grey-text"></i>
+       <label for="contact-name">Full Name</label>
+       <input type="text" class="form-control" id="contact-name" name="contact-name"/>
+       <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+       <i class="fa fa-envelope grey-text"></i>
+       <label for="contact-email">Email</label>
+       <input type="email" class="form-control" id="contact-email"  name="contact-email" required="required"aria-describedby="emailHelp" data-error="Please enter your email address"/>
+       <div class="help-block with-errors"></div>
+       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="messages"></div>
+    <div class="text-right">
+       <button type="submit" class="btn btn-custom" name="submit">Submit</button>
+    </div>
+ </form>
+
+ <div class="container">
+
+  <div class="row">
+
+      <div class="col-xl-8 offset-xl-2 py-5">
+
+          <h1>Contact form Tutorial from
+              <a href="http://bootstrapious.com">Bootstrapious.com</a>
+          </h1>
+
+          <p class="lead">This is a demo for our tutorial dedicated to crafting working Bootstrap contact form with PHP and AJAX background.</p>
+
+
+          <form id="contact-form" method="post" action="contact.php" role="form">
+
+              <div class="messages"></div>
+
+              <div class="controls">
+
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_name">Firstname *</label>
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_lastname">Lastname *</label>
+                              <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_email">Email *</label>
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_need">Please specify your need *</label>
+                              <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                  <option value=""></option>
+                                  <option value="Request quotation">Request quotation</option>
+                                  <option value="Request order status">Request order status</option>
+                                  <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                  <option value="Other">Other</option>
+                              </select>
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <label for="form_message">Message *</label>
+                              <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                          <input type="submit" class="btn btn-success btn-send" value="Send message">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="text-muted">
+                              <strong>*</strong> These fields are required. Contact form template by
+                              <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form" target="_blank">Bootstrapious</a>.</p>
+                      </div>
+                  </div>
+              </div>
+
+          </form>
+
+      </div>
+      <!-- /.8 -->
+
+  </div>
+  <!-- /.row-->
+
+</div>
+<!-- /.container-->
+
 
   <!-- Footer -->
   <footer class="footer text-center">
@@ -275,6 +429,10 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+  <script src="contact.js"></script>
 
   <!-- Sketchy multiples languages support -->
   <script>
