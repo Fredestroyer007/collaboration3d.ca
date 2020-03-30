@@ -81,10 +81,10 @@
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto px-3">
 
-            <li class="nav-item"><a href="#services" class="nav-link text-uppercase link-scroll" lang="fr">Qu'est-ce
+            <li class="nav-item"><a href="#about" class="nav-link text-uppercase link-scroll" lang="fr">Qu'est-ce
                 qu'on fait?</a>
             </li>
-            <li class="nav-item"><a href="#services" class="nav-link text-uppercase link-scroll" lang="en">What do we
+            <li class="nav-item"><a href="#about" class="nav-link text-uppercase link-scroll" lang="en">What do we
                 do?</a>
             </li>
 
@@ -121,14 +121,14 @@
   </header>
 
   <!-- About Section-->
-  <section id="about" class="about">
+  <section id="about" class="about bg-gray">
     <div class="container">
       <div class="row mb-5">
         <div class="col-lg-6">
           <header class="text-center mb-5">
 
-            <h2 class="lined text-uppercase" lang="fr">À propos</h2>
-            <h2 class="lined text-uppercase" lang="en">About us</h2>
+            <h2 class="lined text-uppercase" lang="fr">Qu'est-ce qu'on fait?</h2>
+            <h2 class="lined text-uppercase" lang="en">What do we do?</h2>
 
           </header>
           <p class="lead" lang="fr">Pour faire face à la crise de la COVID-19, nous produisons par technologie
@@ -221,72 +221,11 @@
     </div>
   </section>
 
-
-  <!-- Services Section-->
-  <section id="services" class="bg-gray">
-    <div class="container">
-      <header class="text-center mb-5">
-        <h2 class="lined text-uppercase">Services</h2>
-      </header>
-      <div class="row text-center">
-        <div class="col-lg-4">
-          <div class="bg-white mb-4 p-4">
-            <div class="icon mb-3"><i class="fas fa-desktop"></i></div>
-            <h4 class="text-uppercase font-weight-bold">Web design</h4>
-            <p class="small text-gray">Fifth abundantly made Give sixth hath. Cattle creature i be don't them. </p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="bg-white mb-4 p-4">
-            <div class="icon mb-3"><i class="fas fa-print"></i></div>
-            <h4 class="text-uppercase font-weight-bold">Print</h4>
-            <p class="small text-gray">Fifth abundantly made Give sixth hath. Cattle creature i be don't them. </p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="bg-white mb-4 p-4">
-            <div class="icon mb-3"><i class="fab fa-searchengin"></i></div>
-            <h4 class="text-uppercase font-weight-bold">SEO and SEM</h4>
-            <p class="small text-gray">Fifth abundantly made Give sixth hath. Cattle creature i be don't them. </p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="bg-white mb-4 p-4">
-            <div class="icon mb-3"><i class="far fa-comment-alt"></i></div>
-            <h4 class="text-uppercase font-weight-bold">Consulting</h4>
-            <p class="small text-gray">Fifth abundantly made Give sixth hath. Cattle creature i be don't them. </p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="bg-white mb-4 p-4">
-            <div class="icon mb-3"><i class="far fa-envelope"></i></div>
-            <h4 class="text-uppercase font-weight-bold">Email marketing</h4>
-            <p class="small text-gray">Fifth abundantly made Give sixth hath. Cattle creature i be don't them. </p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="bg-white mb-4 p-4">
-            <div class="icon mb-3"><i class="fas fa-pencil-ruler"></i></div>
-            <h4 class="text-uppercase font-weight-bold">UX &amp; UI</h4>
-            <p class="small text-gray">Fifth abundantly made Give sixth hath. Cattle creature i be don't them. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
   <!-- Portfolio Section-->
-  <section id="portfolio" class="pb-0">
-    <header class="text-center mb-4">
-
-      <h2 class="lined text-uppercase mb-5" lang="fr">Nos modèles</h2>
-      <h2 class="lined text-uppercase mb-5" lang="en">Our models</h2>
-
-    </header>
-
+  <section id="portfolio" class="pb-0 pt-0">
     <!--Carousel Wrapper-->
     <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+
       <!--Indicators-->
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
@@ -294,20 +233,27 @@
         <li data-target="#carousel-example-2" data-slide-to="2"></li>
       </ol>
       <!--/.Indicators-->
+
       <!--Slides-->
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-interval="2000">
           <div class="view">
             <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(105).jpg"
               alt="First slide">
             <div class="mask rgba-black-light"></div>
           </div>
           <div class="carousel-caption">
-            <h3 class="h3-responsive">This is the first title</h3>
-            <p>First text</p>
+
+            <h3 class="h3-responsive text-uppercase carouselText" lang="fr">Ceci est le premier titre</h3>
+            <h3 class="h3-responsive text-uppercase carouselText" lang="en">This is the first title</h3>
+
+            <p class="h3-responsive carouselTextSmall" lang="fr">Premier texte</p>
+            <p class="h3-responsive carouselTextSmall" lang="en">First text</p>
+
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-interval="2000">
+
           <!--Mask color-->
           <div class="view">
             <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(115).jpg"
@@ -315,11 +261,17 @@
             <div class="mask rgba-black-light"></div>
           </div>
           <div class="carousel-caption">
-            <h3 class="h3-responsive">Thir is the second title</h3>
-            <p>Secondary text</p>
+
+            <h3 class="h3-responsive text-uppercase carouselText" lang="fr">Ceci est le second titre</h3>
+            <h3 class="h3-responsive text-uppercase carouselText" lang="en">This is the second title</h3>
+
+            <p class="h3-responsive carouselTextSmall" lang="fr">Second texte</p>
+            <p class="h3-responsive carouselTextSmall" lang="en">Second text</p>
+
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-interval="2000">
+
           <!--Mask color-->
           <div class="view">
             <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(108).jpg"
@@ -327,12 +279,18 @@
             <div class="mask rgba-black-light"></div>
           </div>
           <div class="carousel-caption">
-            <h3 class="h3-responsive">This is the third title</h3>
-            <p>Third text</p>
+
+            <h3 class="h3-responsive text-uppercase carouselText" lang="fr">Ceci est le troisième titre</h3>
+            <h3 class="h3-responsive text-uppercase carouselText" lang="en">This is the third title</h3>
+
+            <p class="h3-responsive carouselTextSmall" lang="fr">Troisième texte</p>
+            <p class="h3-responsive carouselTextSmall" lang="en">Third text</p>
+
           </div>
         </div>
       </div>
       <!--/.Slides-->
+
       <!--Controls-->
       <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -343,8 +301,10 @@
         <span class="sr-only">Next</span>
       </a>
       <!--/.Controls-->
+
     </div>
     <!--/.Carousel Wrapper-->
+
   </section>
 
 
@@ -427,62 +387,87 @@
       <div class="row justify-content-md-center">
         <div class="col-lg-6">
 
-          <form action="https://formspree.io/moqlgaoz" method="POST" class="contact-form">
+          <form action="https://formspree.io/mlelqnrk" method="POST" class="contact-form" lang="fr">
 
-            <input type="hidden" name="_sujet" value="Contactez-nous! - collaboration3d.ca" lang="fr">
-            <input type="hidden" name="_subject" value="Contact us! - collaboration3d.ca" lang="en">
+            <input type="hidden" name="sujet" value="Contactez-nous! - collaboration3d.ca">
 
             <div class="row">
               <div class="form-group col-lg-6">
 
-                <label lang="fr">Votre prénom</label>
-                <label lang="en">Your firstname</label>
-
-                <input type="text" name="_prénom" placeholder="Entrez votre prénom" class="form-control" lang="fr">
-                <input type="text" name="_firstname" placeholder="Enter your first name" class="form-control" lang="en"
-                  aria-describedby="emailHelp">
+                <label name="prénom">Votre prénom</label>
+                <input type="text" name="prénom" placeholder="Entrez votre prénom" class="form-control form-rounded">
 
               </div>
 
               <div class="form-group col-lg-6">
 
-                <label for="nom" lang="fr">Votre nom</label>
-                <label for="lastName" lang="en">Your lastname</label>
-
-
-                <input name="_nom" placeholder="Entrer votre nom" class="form-control" lang="fr">
-                <input name="_lastname" placeholder="Enter your last name" class="form-control" lang="en">
+                <label for="nom">Votre nom</label>
+                <input type="text" name="nom" placeholder="Entrer votre nom" class="form-control form-rounded">
 
               </div>
 
               <div class="form-group col-lg-12">
 
-                <label for="courriel" lang="fr">Votre courriel</label>
-                <label for="email" lang="en">Your email</label>
-
-                <input name="_répondreà" placeholder="Entrez votre courriel" class="form-control" lang="fr">
-                <input name="_replyto" placeholder="Enter your email" class="form-control" lang="en">
+                <label for="courriel">Votre courriel</label>
+                <input type="email" name="courriel" placeholder="Entrez votre courriel" class="form-control form-rounded">
 
               </div>
 
               <div class="form-group col-lg-12">
+                <i class="fas fa-pencil prefix grey-text"></i>
 
-                <label lang="fr">Votre message pour nous</label>
-                <label lang="EN">Your message for us</label>
-
-
-                <textarea placeholder="Entrez votre message" rows="4" class="form-control" lang="fr"></textarea>
-                <textarea placeholder="Enter your message" rows="4" class="form-control" lang="en"></textarea>
-
+                <label for="message">Votre message pour nous</label>
+                <textarea type="text" name="message" placeholder="Entrez votre message" rows="4" class="form-control form-rounded"></textarea>
                 <input type="text" name="_gotcha" style="display:none" />
 
               </div>
 
               <div class="form-group col-lg-12">
 
-                <button type="submit" class="btn btn-outline-primary w-100" lang="fr">Envoyer</button>
-                <button type="submit" class="btn btn-outline-primary w-100" lang="en">Send</button>
+                <button type="submit" class="btn btn-outline-primary w-100">Envoyer</button>
 
+              </div>
+            </div>
+          </form>
+
+          <form action="https://formspree.io/moqlgwaq" method="POST" class="contact-form" lang="en">
+
+            <input type="hidden" name="_subject" value="Contact us! - collaboration3d.ca">
+
+            <div class="row">
+              <div class="form-group col-lg-6">
+
+                <label for="firstname">Your firstname</label>
+                <input type="text" name="firstname" placeholder="Enter your first name" class="form-control form-rounded">
+
+              </div>
+
+              <div class="form-group col-lg-6">
+
+                <label for="lastName">Your lastname</label>
+                <input type="text" name="lastname" placeholder="Enter your last name" class="form-control form-rounded">
+
+              </div>
+
+              <div class="form-group col-lg-12">
+
+                <label for="email">Your email</label>
+                <input type="email" name="email" placeholder="Enter your email" class="form-control form-rounded">
+
+              </div>
+
+              <div class="form-group col-lg-12">
+                <i class="fas fa-pencil prefix grey-text"></i>
+
+                <label for="message">Your message for us</label>
+                <textarea type="text" name="text" placeholder="Enter your message" rows="4" class="form-control form-rounded"></textarea>
+                <input type="text" name="_gotcha" style="display:none" />
+
+              </div>
+
+              <div class="form-group col-lg-12">
+
+                <button type="submit" class="btn btn-outline-primary w-100">Send</button>
 
               </div>
             </div>
@@ -494,7 +479,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer text-center">
+  <footer class="footer text-center bg-gray">
     <div class="container">
       <ul class="list-inline mb-5">
         <li class="list-inline-item">

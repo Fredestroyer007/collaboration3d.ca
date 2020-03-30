@@ -1,9 +1,9 @@
 footer.footer {
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
+}
   
-  footer.footer .social-link {
+footer.footer .social-link {
     display: block;
     height: 4rem;
     width: 4rem;
@@ -12,16 +12,38 @@ footer.footer {
     background-color: #1D809F;
     transition: background-color 0.15s ease-in-out;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-  }
+}
   
-  footer.footer .social-link:hover {
+footer.footer .social-link:hover {
     background-color: #155d74;
     text-decoration: none;
-  }
+}
 
 .no-border {
     border: 0;
     box-shadow: none;
+}
+
+.carouselText {
+  color: white;
+  font-family: "Roboto Condensed" !important;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.carouselTextSmall {
+  color: white;
+  font-family: "Roboto Condensed" !important;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.form-rounded {
+  border-radius: 1rem;
+}
+
+.has-error input[type="text"], .has-error input[type="email"], .has-error select {
+  border: 1px solid #a94442;
 }
 
 
