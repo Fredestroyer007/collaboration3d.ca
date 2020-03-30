@@ -33,7 +33,9 @@ $(function () {
             $('.navbar-toggler').attr('aria-expanded', 'false');
         }
     });
+
 });
+
 
 
     
