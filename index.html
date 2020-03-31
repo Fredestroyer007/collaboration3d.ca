@@ -6,13 +6,17 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
+  <meta name="description" content="Website for Collaboration3D">
+  <meta name="author" content="Frédéric Larochelle">
+  <meta name="keywords" content="COVID,Covid-19,COVID-19,COVID-19,3D,PRINTING,PROTECTION,HELP,FACE,SHIELD,MEDICAL,STUDENT,BDEB,BOIS-DE-BOULOGNE,MONTREAL">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
+  <meta http-equiv=“Pragma” content=”no-cache”>
+  <meta http-equiv=“Expires” content=”-1″>
+  <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
 
 
   <title>Collaboration3D</title>
-
 
 
   <!-- Bootstrap CSS-->
@@ -36,7 +40,6 @@
 
   <!-- Favicons-->
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
 </head>
 
@@ -72,7 +75,7 @@
       <div class="container">
         <a href="#about" class="navbar-brand py-1 link-scroll">
           <div style="margin: 0.7em">
-            <img src="img/logo.png" alt="" width="200" class="img-fluid">
+            <img src="img/logo.png" alt="" class="img-fluid">
           </div>
         </a>
         <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -93,27 +96,33 @@
             <li class="nav-item"><a href="#model" class="nav-link text-uppercase link-scroll" lang="en">Our
                 models</a></li>
 
-            <li class="nav-item"><a href="#help" class="nav-link text-uppercase link-scroll" lang="fr">Faites la différence!</a>
+            <li class="nav-item"><a href="#help" class="nav-link text-uppercase link-scroll" lang="fr">Faites la
+                différence</a>
             </li>
-            <li class="nav-item"><a href="#help" class="nav-link text-uppercase link-scroll" lang="en">Make a difference!</a>
+            <li class="nav-item"><a href="#help" class="nav-link text-uppercase link-scroll" lang="en">Make a
+                difference</a>
             </li>
 
             <li class="nav-item"><a href="#contact" class="nav-link text-uppercase link-scroll"
-                lang="fr">Contactez-nous!</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link text-uppercase link-scroll" lang="en">Contact us!</a>
+                lang="fr">Contactez-nous</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link text-uppercase link-scroll" lang="en">Contact us</a>
             </li>
 
             <li class="nav-item">
-              <div class="dropdown">
-                <button class="btn dropbtn customBtn" lang="fr"><img src="img/france.png"></button>
-                <button class="btn dropbtn customBtn" lang="en"><img src="img/uk.png"></button>
-                <div class="dropdown-content">
-                  <a onclick="toggleLanguage('Français')" value="fr"><img src="img/france.png"></a>
-                  <a onclick="toggleLanguage('English')" value="en"><img src="img/uk.png"></a>
-                </div>
-              </div>
-            </li>
 
+              <div class="d-none d-lg-block">
+                <button class="btn link-scroll" onclick="toggleLanguage('Français')" lang="en"><img
+                    src="img/france.png"></button>
+                <button class="btn link-scroll" onclick="toggleLanguage('English')" lang="fr"><img
+                    src="img/uk.png"></button>
+              </div>
+
+              <div class="d-block d-lg-none">
+                <button class="btn nav-link text-uppercase" onclick="toggleLanguage('Français')" lang="en">Français</button>
+                <button class="btn nav-link text-uppercase" onclick="toggleLanguage('English')" lang="fr">English</button>
+              </div>
+
+            </li>
 
           </ul>
         </div>
@@ -133,6 +142,7 @@
             <h2 class="lined text-uppercase" lang="en">What do we do?</h2>
 
           </header>
+          <div></div>
           <p class="lead" lang="fr">Pour faire face à la crise de la COVID-19, nous produisons des masques visières à
             l'aide de l'impression 3D qui permettent de protéger notre communauté.</p>
           <p class="lead" lang="en">To cope with the COVID-19 crisis, we are producing face shields using 3D printing
@@ -247,19 +257,30 @@
       <div class="row">
 
         <div class="col-lg-6" lang="fr">
-          <p>Si vous possédez une imprimante 3D, il est possible de <a href="https://github.com/Fredestroyer007/Collaboration3D">télécharger</a> les instructions pour imprimer vos propres masques visières. Si vous n’avez pas d’imprimante 3D disponible, faites la différence en parlant de notre projet à votre entourage et en allant nous suivre sur les réseaux sociaux. Chaque petit geste compte et est grandement apprécié!</p>
+          <p>Si vous possédez une imprimante 3D, il est possible de <a
+              href="https://github.com/Fredestroyer007/Collaboration3D">télécharger</a> les instructions pour imprimer
+            vos propres masques visières. Si vous n’avez pas d’imprimante 3D disponible, faites la différence en parlant
+            de notre projet à votre entourage et en allant nous suivre sur les réseaux sociaux. Chaque petit geste
+            compte et est grandement apprécié!</p>
         </div>
 
         <div class="col-lg-6" lang="en">
-          <p>If you have a 3D printer, you can <a href="https://github.com/Fredestroyer007/Collaboration3D">download</a> the instructions for printing your own face shields. If you don't have a 3D printer on hand, help make the difference by telling others about our project and following us on social media. Every little bit counts and is greatly appreciated!</p>
+          <p>If you have a 3D printer, you can <a href="https://github.com/Fredestroyer007/Collaboration3D">download</a>
+            the instructions for printing your own face shields. If you don't have a 3D printer on hand, help make the
+            difference by telling others about our project and following us on social media. Every little bit counts and
+            is greatly appreciated!</p>
         </div>
 
         <div class="col-lg-6" lang="fr">
-          <p>Vous pouvez aussi nous soutenir en faisant un don. Chaque tranche de 2$, soit le prix pour le matériel et le transport, nous permet d’offrir un masque à un professionnel de notre réseau de la santé. Nous sommes tous bénévoles et, ensemble, nous pouvons faire la différence!</p>
+          <p>Vous pouvez aussi nous soutenir en faisant un don. Chaque tranche de 2$, soit le prix pour le matériel et
+            le transport, nous permet d’offrir un masque à un professionnel de notre réseau de la santé. Nous sommes
+            tous bénévoles et, ensemble, nous pouvons faire la différence!</p>
         </div>
 
         <div class="col-lg-6" lang="en">
-          <p>You can also support us by making a donation. Every 2$, the price for material and transportation, allows us to offer a mask to a healthcare professional of our health network. We are all volunteers and together we can make a difference!</p>
+          <p>You can also support us by making a donation. Every 2$, the price for material and transportation, allows
+            us to offer a mask to a healthcare professional of our health network. We are all volunteers and together we
+            can make a difference!</p>
         </div>
 
       </div>

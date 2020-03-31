@@ -46,50 +46,6 @@ footer.footer .social-link:hover {
   border-radius: 0.8rem;
 }
 
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.customBtn {
-  width: 40px !important;
-}
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  min-width: 40px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 0.5rem;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 12px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-  border-radius: 0.5rem;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-/*.dropdown:hover .dropbtn {
-  background-color: #7395AE;
-  border-radius: 0.5rem;
-}*/
-
 .wow:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.2s;
@@ -106,4 +62,8 @@ footer.footer .social-link:hover {
 
 .quote {
   float: center; clear: both;
+}
+
+.mobile-centre {
+  text-align: center;
 }
