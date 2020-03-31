@@ -89,3 +89,21 @@ footer.footer .social-link:hover {
   background-color: #7395AE;
   border-radius: 0.5rem;
 }*/
+
+.wow:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.2s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  20% { transform: translate(-2px, 0px) rotate(1deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  60% { transform: translate(-2px, 1px) rotate(0deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.quote {
+  float: center; clear: both;
+}
