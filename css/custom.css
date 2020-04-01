@@ -38,6 +38,20 @@ footer.footer .social-link:hover {
   font-weight: 200;
 }
 
+.carouselTextDark {
+  color: #555;
+  font-family: "Roboto Condensed" !important;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.carouselTextSmallDark {
+  color: #555;
+  font-family: "Roboto Condensed" !important;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
 .form-rounded {
   border-radius: 1rem;
 }
