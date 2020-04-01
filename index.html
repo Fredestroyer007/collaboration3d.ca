@@ -26,6 +26,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+  <!-- Lightbox-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css"
+    integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+
   <!-- Custom fonts-->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
@@ -55,15 +59,15 @@
         <h2 class="text-uppercase hero-text text-white">Nous sommes
           <span class="font-weight-bold d-block testy">Collaboration3D</span>
         </h2>
-          <p class="headings-font-family text-uppercase lead"> « Soyez le changement que vous voulez voir dans le monde!
-            » -Gandhi</p>
+        <p class="headings-font-family text-uppercase lead"> « Soyez le changement que vous voulez voir dans le monde!
+          » -Gandhi</p>
       </div>
 
       <div class="container text-center text-white" lang="en">
         <p class="headings-font-family text-uppercase lead">Welcome to out digital home</p>
         <h2 class="text-uppercase hero-text text-white">We are<span
             class="font-weight-bold d-block">Collaboration3D</span></h2>
-          <p class="headings-font-family text-uppercase lead">”Be the change you want to see in the world!” -Gandhi</p>
+        <p class="headings-font-family text-uppercase lead">”Be the change you want to see in the world!” -Gandhi</p>
       </div>
 
     </div><a href="#about" class="scroll-btn link-scroll wow"><i class="fas fa-angle-double-down"></i></a>
@@ -88,14 +92,15 @@
             <li class="nav-item"><a href="#about" class="nav-link text-uppercase link-scroll centre" lang="fr">Qu'est-ce
                 qu'on fait?</a>
             </li>
-            <li class="nav-item"><a href="#about" class="nav-link text-uppercase link-scroll centre" lang="en">What do we
+            <li class="nav-item"><a href="#about" class="nav-link text-uppercase link-scroll centre" lang="en">What do
+                we
                 do?</a>
             </li>
 
-            <li class="nav-item"><a href="#model" class="nav-link text-uppercase link-scroll centre" lang="fr">Nos
-                modèles</a></li>
-            <li class="nav-item"><a href="#model" class="nav-link text-uppercase link-scroll centre" lang="en">Our
-                models</a></li>
+            <li class="nav-item"><a href="#divers" class="nav-link text-uppercase link-scroll centre"
+                lang="fr">Divers</a></li>
+            <li class="nav-item"><a href="#divers" class="nav-link text-uppercase link-scroll centre"
+                lang="en">Various</a></li>
 
             <li class="nav-item"><a href="#help" class="nav-link text-uppercase link-scroll centre" lang="fr">Faites la
                 différence</a>
@@ -106,7 +111,8 @@
 
             <li class="nav-item"><a href="#contact" class="nav-link text-uppercase link-scroll centre"
                 lang="fr">Contactez-nous</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link text-uppercase link-scroll centre" lang="en">Contact us</a>
+            <li class="nav-item"><a href="#contact" class="nav-link text-uppercase link-scroll centre" lang="en">Contact
+                us</a>
             </li>
 
             <li class="nav-item">
@@ -119,10 +125,8 @@
               </div>
 
               <div class="d-block d-lg-none">
-                <a class="btn nav-link text-uppercase" onclick="toggleLanguage('Français')"
-                  lang="en">Français</a>
-                <a class="btn nav-link text-uppercase" onclick="toggleLanguage('English')"
-                  lang="fr">English</a>
+                <a class="btn nav-link text-uppercase" onclick="toggleLanguage('Français')" lang="en">Français</a>
+                <a class="btn nav-link text-uppercase" onclick="toggleLanguage('English')" lang="fr">English</a>
               </div>
 
             </li>
@@ -161,8 +165,10 @@
               3D printing and our desire to help allow us to adapt this technology to protect our healthcare personnel.
             </p>
 
-            <p lang="fr">Pour des informations sur l'utilisation des masques visières, <a href="files/Instruction pour les visières 3D_compressed.pdf">cliquez ici</a>.</p>
-            <p lang="en">For information on the of the face shields, <a href="files/Instruction for 3d face shield_compressed.pdf">click here</a>.</p>
+            <p lang="fr">Pour des informations sur l'utilisation des masques visières, <a
+                href="files/Instruction pour les visières 3D_compressed.pdf">cliquez ici</a>.</p>
+            <p lang="en">For information on the of the face shields, <a
+                href="files/Instruction for 3d face shield_compressed.pdf">click here</a>.</p>
 
           </div>
 
@@ -180,7 +186,7 @@
   </section>
 
   <!-- Model Section-->
-  <section id="model" class="pb-0 pt-0">
+  <section id="divers" class="pb-0 pt-0">
     <!--Carousel Wrapper-->
     <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
 
@@ -394,7 +400,7 @@
                 <label for="message">Your message for us</label>
                 <textarea type="text" name="text" placeholder="Enter your message" rows="4"
                   class="form-control form-rounded"></textarea>
-                  
+
                 <input type="text" name="_gotcha" style="display:none" />
 
               </div>
@@ -454,6 +460,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"
+    integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
