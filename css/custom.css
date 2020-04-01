@@ -31,6 +31,14 @@ footer.footer .social-link:hover {
   font-weight: 300;
 }
 
+.carouselTextSmaller {
+  color: white;
+  font-family: "Roboto Condensed" !important;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+
 .carouselTextSmall {
   color: white;
   font-family: "Roboto Condensed" !important;
