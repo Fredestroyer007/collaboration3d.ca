@@ -61,9 +61,8 @@ section {
   outline: none !important;
 }
 
-.navbar-toggler:hover, .navbar-toggler:focus {
-  color: #7395AE;
-  color: #fff;
+.hovery:hover, .hovery:focus {
+  color: #495057;
 }
 
 /*
@@ -271,8 +270,8 @@ STYLE SWITCHER FOR DEMO
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.125rem;
-  line-height: 1;
-  border: 1px solid transparent;
+  line-height: 0;
+  border: 0px solid transparent;
   border-radius: 0;
 }
 
@@ -281,7 +280,7 @@ STYLE SWITCHER FOR DEMO
 }
 
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-  color: rgba(0, 0, 0, 0.9);
+  color:  #7395AE;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -304,9 +303,8 @@ STYLE SWITCHER FOR DEMO
   color: rgba(0, 0, 0, 0.9);
 }
 
-.navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.1);
+.navbar .navbar-toggler {
+  color: rgba(73, 80, 87, 0.5);
 }
 
 .navbar-light .navbar-toggler-icon {

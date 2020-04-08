@@ -93,3 +93,7 @@ footer.footer .social-link:hover {
 .testy {
   font-size: 88%;
 }
+
+.flaggy:hover, .flaggy:focus {
+  transform: scale(1.05);
+}
