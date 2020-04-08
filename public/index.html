@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-
 <html>
 
+<!-- TODO: 
+  - Email form verification (only handle in a basic way by Formspree right now)
+  - Carrousel titles wayyy to big on mobile (the whole carrousel is problematic on mobile)
+  - Language change flag not centered between lg and xl, all other Boostrap size are fine
+  - Caroussel navigation on white background
+  - Uniformity of color design
+  - Hamburger some weird color stades
+  - Add button for fundraising and for github download for the .stl filesm not just a href in the text
+-->
 <head>
 
   <meta charset="utf-8">
@@ -12,14 +20,15 @@
     content="COVID,Covid-19,COVID-19,COVID-19,3D,PRINTING,PROTECTION,HELP,FACE,SHIELD,MEDICAL,STUDENT,BDEB,BOIS-DE-BOULOGNE,MONTREAL">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="-1">
-  <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
-  <META http-equiv="expires" content="Mon, 13 Apr 2020 11:12:01 GMT">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="-1">
+  <meta http-equiv="cache-control" content="no-cache">
 
   <meta property="og:title" content="Site web de Collaboration3D">
-  <meta property="og:description" content="Un groupe d'étudiants bénévoles qui utilisent l'impression 3D dans la lutte contre le COVID-19.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/Fredestroyer007/collaboration3d.ca/master/public/img/thumbnail.png">
+  <meta property="og:description"
+    content="Un groupe d'étudiants bénévoles qui utilisent l'impression 3D dans la lutte contre le COVID-19.">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/Fredestroyer007/collaboration3d.ca/master/public/img/thumbnail.png">
   <meta property="og:url" content="https://collaboration3d.ca/">
   <meta property="og:type" content="Organisation">
   <meta name="twitter:card" content="summary_large_image">
@@ -28,33 +37,33 @@
   <title>Collaboration3D</title>
 
 
-  <!-- Bootstrap CSS-->
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!-- Lightbox-->
+  <!-- Lightbox -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css"
     integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
 
-  <!-- Custom fonts-->
+  <!-- Custom fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-  <!-- theme stylesheet-->
+  <!-- theme stylesheet - https://bootstrapious.com/p/agency-portfolio-theme -->
   <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
 
-  <!-- Custom stylesheet - for your changes-->
+  <!-- Custom stylesheet -->
   <link rel="stylesheet" href="css/custom.css">
 
-  <!-- Favicons-->
+  <!-- Favicons -->
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 
 </head>
 
 <body>
 
-  <!-- Hero Section-->
+  <!-- Hero Section -->
   <section id="intro" style="background: url(img/makerbotOutside.jpg)" class="hero bg-cover">
     <div class="overlay"></div>
     <div class="content h-100 d-flex align-items-center">
@@ -80,7 +89,7 @@
   </section>
 
 
-  <!-- navbar-->
+  <!-- navbar -->
   <header class="header sticky-top">
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-0">
       <div class="container">
@@ -97,13 +106,15 @@
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto px-3">
 
-            <li class="nav-item"><a href="#about" class="nav-link text-uppercase link-scroll centre" lang="fr">Notre mission</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link text-uppercase link-scroll centre" lang="en">Our mission</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link text-uppercase link-scroll centre" lang="fr">Notre
+                mission</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link text-uppercase link-scroll centre" lang="en">Our
+                mission</a></li>
 
-            <li class="nav-item"><a href="#divers" class="nav-link text-uppercase link-scroll centre"
-                lang="fr">Nos collaborateurs</a></li>
-            <li class="nav-item"><a href="#divers" class="nav-link text-uppercase link-scroll centre"
-                lang="en">Our collaborators</a></li>
+            <li class="nav-item"><a href="#divers" class="nav-link text-uppercase link-scroll centre" lang="fr">Nos
+                collaborateurs</a></li>
+            <li class="nav-item"><a href="#divers" class="nav-link text-uppercase link-scroll centre" lang="en">Our
+                collaborators</a></li>
 
             <li class="nav-item"><a href="#help" class="nav-link text-uppercase link-scroll centre" lang="fr">Faites la
                 différence</a>
@@ -136,12 +147,11 @@
 
           </ul>
         </div>
-
       </div>
     </nav>
   </header>
 
-  <!-- About Section-->
+  <!-- About Section -->
   <section id="about" class="about bg-gray">
     <div class="container">
       <div class="row mb-4">
@@ -159,7 +169,9 @@
             <p class="lead" lang="en">To cope with the COVID-19 crisis, we are producing face shields using 3D printing
               technology to help protect our community.</p>
 
-            <p lang="fr">Notre équipe est composée d'étudiants bénévoles de niveau CÉGEP qui désirent faire la différence. Nos connaissances en impression 3D et notre désir d’aider nous permettent d'adapter cette technologie pour protéger notre personnel de la santé.</p>
+            <p lang="fr">Notre équipe est composée d'étudiants bénévoles de niveau CÉGEP qui désirent faire la
+              différence. Nos connaissances en impression 3D et notre désir d’aider nous permettent d'adapter cette
+              technologie pour protéger notre personnel de la santé.</p>
             <p lang="en">Our team is made up of volunteer CEGEP students who want to make a difference. Our knowledge of
               3D printing and our desire to help allow us to adapt this technology to protect our healthcare personnel.
             </p>
@@ -184,31 +196,28 @@
     </div>
   </section>
 
-  <!-- Model Section-->
+  <!-- Carousel Section -->
   <section id="divers" class="pb-0 pt-0">
-    <!--Carousel Wrapper-->
     <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
 
-      <!--Indicators-->
+      <!-- Indicator -->
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-2" data-slide-to="1"></li>
         <li data-target="#carousel-example-2" data-slide-to="2"></li>
         <li data-target="#carousel-example-2" data-slide-to="3"></li>
       </ol>
-      <!--/.Indicators-->
 
-      <!--Slides-->
-
+      <!-- Slides -->
       <div class="carousel-inner" role="listbox">
 
         <div class="carousel-item active" data-interval="4000">
 
-          <!--Mask color-->
           <div class="view">
             <img class="d-block w-100" src="img/oliGrandpa.jpg" alt="First slide">
             <div class="mask rgba-black-light"></div>
           </div>
+
           <div class="carousel-caption pb-5">
 
             <h3 class="h3-responsive text-uppercase carouselTextSmaller pb-2" lang="fr">Nous prototypons en continu pour
@@ -221,11 +230,11 @@
 
         <div class="carousel-item" data-interval="4000">
 
-          <!--Mask color-->
           <div class="view">
             <img class="d-block w-100" src="img/angieSonia.jpg" alt="Second slide">
             <div class="mask rgba-black-light"></div>
           </div>
+
           <div class="carousel-caption pb-5">
 
             <h3 class="h3-responsive text-uppercase carouselTextSmaller pb-2" lang="fr">Nous sommes des étudiants du
@@ -237,11 +246,12 @@
         </div>
 
         <div class="carousel-item" data-interval="4000">
-          <!--Mask color-->
+
           <div class="view">
             <img class="d-block w-100" src="img/makerbotNight.jpg" alt="Third slide">
             <div class="mask rgba-black-light"></div>
           </div>
+
           <div class="carousel-caption pb-5">
 
             <h3 class="h3-responsive text-uppercase carouselTextSmaller pb-2" lang="fr">Nos imprimantes impriment jour
@@ -253,11 +263,12 @@
         </div>
 
         <div class="carousel-item" data-interval="4000">
-          <!--Mask color-->
+
           <div class="view">
             <img class="d-block w-100" src="img/commanditaire.png" alt=" slide">
             <div class="mask rgba-black-light"></div>
           </div>
+
           <div class="carousel-caption">
 
             <h3 class="h3-responsive text-uppercase carouselTextDark" lang="fr">Merci à nos commanditaires!</h3>
@@ -270,20 +281,19 @@
           </div>
         </div>
       </div>
-      <!--/.Slides-->
 
-      <!--Controls-->
+      <!-- Controls -->
       <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev" alt="Third slide">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
+
       <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-      <!--/.Controls-->
+
     </div>
-    <!--/.Carousel Wrapper-->
   </section>
 
 
@@ -314,13 +324,17 @@
         </div>
 
         <div class="col-lg-6" lang="fr">
-          <p>Vous pouvez aussi nous soutenir en faisant <a href="https://fondationhscm.org/campagnes-de-financement/collaboration-3d-70">une donation</a>. Chaque tranche de 2$, soit le prix pour le matériel et
+          <p>Vous pouvez aussi nous soutenir en faisant <a
+              href="https://fondationhscm.org/campagnes-de-financement/collaboration-3d-70">une donation</a>. Chaque
+            tranche de 2$, soit le prix pour le matériel et
             le transport, nous permet d’offrir une visière à un professionnel de notre réseau de la santé. Nous sommes
             tous bénévoles et, ensemble, nous pouvons faire la différence!</p>
         </div>
 
         <div class="col-lg-6" lang="en">
-          <p>You can also support us by making <a href="https://fondationhscm.org/campagnes-de-financement/collaboration-3d-70">a donation</a>. Every 2$, the price for material and transportation, allows
+          <p>You can also support us by making <a
+              href="https://fondationhscm.org/campagnes-de-financement/collaboration-3d-70">a donation</a>. Every 2$,
+            the price for material and transportation, allows
             us to offer a mask to a healthcare professional of our health network. We are all volunteers and together we
             can make a difference!</p>
         </div>
@@ -376,6 +390,8 @@
                 <label for="message">Votre message pour nous</label>
                 <textarea type="text" name="message" placeholder="Entrez votre message" rows="4"
                   class="form-control form-rounded"></textarea>
+
+                <!-- Spam catcher -->
                 <input type="text" name="_gotcha" style="display:none" />
 
               </div>
@@ -421,6 +437,7 @@
                 <textarea type="text" name="text" placeholder="Enter your message" rows="4"
                   class="form-control form-rounded"></textarea>
 
+                <!-- Spam catcher -->
                 <input type="text" name="_gotcha" style="display:none" />
 
               </div>
@@ -489,7 +506,7 @@
     integrity="sha256-u2wIV5+HF1PsPTvNHkl1f6g0LhNv1aSFuHGkBovDJiM=" crossorigin="anonymous"></script>
   <script src="js/front.js"></script>
 
-  <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+  <!-- FontAwesome CSS - loading at last due to size-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </body>
@@ -500,7 +517,10 @@
   $('[lang="fr"]').show(); // select defaut language
 
   function toggleLanguage(language) {
-    let description = document.getElementById("description");
+    let description = document.getElementById("description"); // get the selecte language
+    /* if French set lang attribute to French
+     * else English set lang attribute to English
+     */
     if (language === "Français") {
       $('[lang]').hide();
       $('[lang="fr"]').show();
@@ -513,6 +533,7 @@
 </script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Copy-paste from Google Analytics recommended setup -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162105614-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
